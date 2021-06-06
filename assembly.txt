@@ -1,0 +1,25 @@
+#dhfjkdhfskjdhfsdj
+tes: 
+    xor $s0,$zero, $zero # a = 0
+exit:  add $t0, $s1, $s0
+    addi $s1, $zero, 5  # b = 5 
+else:
+    #testeComentario
+    sll $t2, $s0, 12
+mar:    jr $ra
+main: beq $s1, $zero, oi 
+    jal oi
+    lui $t0, 23
+    bne $s4, $zero, mar
+    andi $s0, $s0, 5
+    sw $s1, 7($t2)
+    lw $s1, 7($t2)
+    j main
+    srl $s1, $t0, -5
+    bne $t0,$zero, tes
+    #jksdjsk
+#hdjhfdjkfkd
+#ofdhjf
+
+oi: add $s0, $t4, $s3
+    xori $t5, $s1, 7
